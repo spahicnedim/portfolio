@@ -7,13 +7,15 @@ const Creator = () => {
     <>
       <div className="flex flex-row justify-center items-center gap-3">
         <img
-          onClick={() => window.open("https://github.com/", "blank")}
+          onClick={() => window.open("https://github.com/spahicnedim", "blank")}
           src={github}
           alt="github"
           className="w-11 h-11 object-contain cursor-pointer mb-5"
         />
         <img
-          onClick={() => window.open("https://instagram.com/", "blank")}
+          onClick={() =>
+            window.open("https://www.instagram.com/_nedimspahic_/", "blank")
+          }
           src={insta}
           alt="instagram"
           className="w-10 h-10 object-contain cursor-pointer mb-5"
