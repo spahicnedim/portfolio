@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Home() {
   return (
     <div className="flex flex-col m-auto max-w-7xl items-center justify-center h-screen gap-20">
@@ -5,12 +7,12 @@ export default function Home() {
         <h1 className="text-5xl font-bold">Nedim Spahić</h1>
         <p className="text-xl">
           📧 Contact:{" "}
-          <a
+          <Link
             href="mailto:nedim@nedimspahic.com"
             className="text-blue-500 hover:underline"
           >
             nedim@nedimspahic.com
-          </a>
+          </Link>
         </p>
       </div>
 
