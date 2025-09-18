@@ -1,22 +1,25 @@
-import Link from "next/link";
+import Hero from "@/sections/Hero";
+import ShowcaseSection from "@/sections/ShowcaseSection";
+import Navbar from "@/components/Navbar";
+import LogoSection from "@/sections/LogoSection";
+import FeatureCards from "@/sections/FeatureCards";
+import ExperienceSection from "@/sections/ExperienceSection";
+import ContactSection from "@/sections/ContactSection";
+import Footer from "@/sections/Footer";
 
-export default function Home() {
+const Home = () => {
   return (
-    <div className="flex flex-col m-auto max-w-7xl items-center justify-center h-screen gap-20">
-      <div className="justify-center items-center flex flex-col gap-4">
-        <h1 className="text-5xl font-bold">Nedim Spahić</h1>
-        <p className="text-xl">
-          📧 Contact:{" "}
-          <Link
-            href="mailto:nedim@nedimspahic.com"
-            className="text-blue-500 hover:underline"
-          >
-            nedim@nedimspahic.com
-          </Link>
-        </p>
-      </div>
-
-      <p className="text-2xl text-gray-500 animate-pulse">Working on it...</p>
-    </div>
+    <>
+      <Navbar />
+      <Hero />
+      <ShowcaseSection />
+      {/* <LogoSection /> */}
+      <FeatureCards />
+      <ExperienceSection />
+      <ContactSection />
+      <Footer />
+    </>
   );
-}
+};
+
+export default Home;

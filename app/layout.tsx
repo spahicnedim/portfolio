@@ -15,6 +15,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Nedim Spahic",
   description: "Personal website of Nedim Spahic",
+  icons: {
+    icon: "/images/Favicon.png",
+  },
 };
 
 export default function RootLayout({
